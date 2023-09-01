@@ -12,7 +12,7 @@ $(function() {
   			items: 1,
   		},
   	},
-	  smartSpeed: 1200,
+	  smartSpeed: 400,
 	  nav: true,
 	  dots: false,
 	  navText: ['','']

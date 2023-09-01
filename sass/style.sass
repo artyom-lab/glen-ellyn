@@ -297,6 +297,9 @@ a
 .owl-1
 	padding-left: 35px
 	padding-right: 35px
+	@media (max-width: 767.98px)
+		padding-left: 20px
+		padding-right: 20px
 	.owl-nav
 		margin-top: 0
 		.owl-prev, .owl-next
@@ -312,6 +315,10 @@ a
 			position: absolute
 			top: 12px 
 			left: 0
+			@media (max-width: 767.98px)
+				background-size: 9px !important
+				height: 16px
+				width: 9px
 			&:hover 
 				opacity: .7
 				background-color: transparent
@@ -325,11 +332,14 @@ a
 
 .date
 	display: inline-block
-	width: 85px
+	width: 13%
 	padding: 10px
 	border-radius: 8px
 	color: $color-black
 	margin: 2px
+	@media (max-width: 767.98px)
+		width: 20%
+		padding: 4px
 	&:hover, &.active
 		font-weight: bold
 		background: $color-gray
@@ -337,6 +347,10 @@ a
 		color: $color-black
 	.day
 		text-transform: uppercase
+		@media (max-width: 767.98px)
+			font-size: 12px
 	.number
 		font-size: 14px
+		@media (max-width: 767.98px)
+			font-size: 10px
 	
