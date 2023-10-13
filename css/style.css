@@ -345,4 +345,60 @@ a {
       .date .number {
         font-size: 10px; } }
 
+.card-widget {
+  min-height: 175px;
+  width: 300px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #205985 0%, #13324b 100%);
+  color: #FFF;
+  padding: 18px 20px;
+  position: relative;
+  overflow: hidden;
+  font-size: 13px;
+  z-index: 0;
+  display: flex; }
+  @media (max-width: 575.98px) {
+    .card-widget {
+      max-width: 300px;
+      width: auto; } }
+  .card-widget .title {
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-weight: bold; }
+  .card-widget p {
+    line-height: 1.2;
+    margin-bottom: 8px; }
+
+.btn-contact {
+  background: #8bdc41;
+  border-radius: 8px;
+  color: #FFF;
+  padding: 8px;
+  transition: 0.3s;
+  border: 0;
+  font-size: 13px;
+  font-weight: bold; }
+  .btn-contact:hover {
+    background: #69B051; }
+
+.widget-1, .widget-2, .widget-3 {
+  position: absolute;
+  z-index: -1; }
+
+.widget-1 {
+  bottom: 0;
+  right: -32px;
+  width: 180px; }
+
+.widget-2 {
+  bottom: 0;
+  right: 20px;
+  width: 80px; }
+
+.widget-3 {
+  bottom: -30px;
+  right: 15px;
+  width: 110px; }
+
 /*# sourceMappingURL=style.css.map */
