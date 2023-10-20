@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Glen Ellyn</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/glenbard.webp">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-xl navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#!">
+        <img src="img/brand-geo.webp" alt="" class="brand-dark">
+        <img src="img/brand-white.webp" alt="" class="brand-white">
+      </a>
+      <button class="sandwich collapsed d-xl-none" id="sandwich" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span></span>
+      </button>
+
+      <div class="collapse navbar-collapse flex-xl-wrap" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-3 mt-xl-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Schools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Schedules</a>
+          </li>
+          <li class="nav-item dropdown dropdown-1">
+            <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown">Football <i class="fas fa-chevron-right"></i></a>
+            <div class="dropdown-menu">
+              <a href="#!" class="dropdown-item">News</a>
+              <a href="#!" class="dropdown-item">Teams</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-1">
+            <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown">Baseball <i class="fas fa-chevron-right"></i></a>
+            <div class="dropdown-menu">
+              <a href="#!" class="dropdown-item">News</a>
+              <a href="#!" class="dropdown-item">Teams</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-1">
+            <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown">Basketball <i class="fas fa-chevron-right"></i></a>
+            <div class="dropdown-menu">
+              <a href="#!" class="dropdown-item">News</a>
+              <a href="#!" class="dropdown-item">Teams</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown dropdown-1">
+            <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown">Volleyball <i class="fas fa-chevron-right"></i></a>
+            <div class="dropdown-menu">
+              <a href="#!" class="dropdown-item">News</a>
+              <a href="#!" class="dropdown-item">Teams</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="#!"><span>&#183;</span><span class="mx-1">&#183;</span><span>&#183;</span></a>
+          </li>
+        </ul>
+        <div class="social-box my-3 my-xl-0 ml-auto">
+          <div class="row row-8 align-items-center justify-content-center justify-content-xl-end">
+            <div class="col-auto">
+              <a href="#!" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 448 512"><path fill="#FFF" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="#!" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 448 512"><path fill="#FFF" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="#!" class="social">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 448 512"><path fill="#FFF" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center fz-12 d-xl-none">©2023 Glen Ellyn Sports Wire</div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="header-team">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 col-xl br-gray">
+              <div class="row row-8 align-items-center justify-content-center">
+                <div class="col-auto">
+                  <img src="img/glenbard.webp" alt="" class="logo">
+                </div>
+                <div class="col">
+                  <h2 class="mb-0"><span class="font-weight-bold">Glenbard West</span> Hilltoppers <br><span class="gray">Football (Varsity)</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl fz-14 d-none d-md-block">
+              <div class="row row-4 pb-1">
+                <div class="col-6 col-sm-4 gray">Address</div>
+                <div class="col">Glenbard West High School</div>
+              </div>
+              <div class="row row-4 pb-1">
+                <div class="col-6 col-sm-4 gray">Teams</div>
+                <div class="col">11 Varsity Sports</div>
+              </div>
+              <div class="row row-4 pb-1">
+                <div class="col-6 col-sm-4 gray">Association</div>
+                <div class="col">IHSA</div>
+              </div>
+              <div class="row row-4">
+                <div class="col-6 col-sm-4 gray">Conference</div>
+                <div class="col">West Suburban</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-auto text-center mt-4 mt-xl-0 d-none d-md-block">
+          <img src="img/adv-4.webp" alt="" width="370">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="nav-white">
+    <div class="container">
+      <div class="row row-8 flex-nowrap align-items-center">
+        <div class="col-auto text-center col-team">
+          <a href="#!" class="nav-link">
+            <img src="img/glenbard.webp" alt="">
+          </a>
+        </div>
+        <div class="col-auto text-center">
+          <a href="#!" class="nav-link">School Home</a>
+        </div>
+        <div class="col-auto text-center">
+          <a href="#!" class="nav-link active">Football Overview</a>
+        </div>
+        <div class="col-auto text-center">
+          <a href="#!" class="nav-link">News</a>
+        </div>
+        <div class="col-auto text-center">
+          <a href="#!" class="nav-link">Schedule</a>
+        </div>
+        <div class="col-auto text-center">
+          <a href="#!" class="nav-link">Roster</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="mb-5">
+    <div class="container container-2">
+      <div class="row">
+        <div class="col">
+          <ol class="breadcrumb px-0 my-2">
+            <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-house fz-11"></i></a></li>
+            <li class="breadcrumb-item active"><a href="#">Glenbard West High School</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-auto order-2 order-lg-1 mb-5 mb-lg-0">
+          <div class="w-240"> 
+            <div class="section-white mb-4">
+              <div class="pt-3 px-3">
+                <div class="row align-items-center">
+                  <div class="col-sm mb-2 mb-sm-0">
+                    <span class="font-weight-bold align-middle">2023 Teams</span>
+                  </div>
+                </div>
+              </div>
+              <div class="px-3 gray pt-2">Boys</div>
+              <div class="schedule mt-1 pb-2">
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Baseball</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Basketball</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Football</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Soccer</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Tennis</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Wrestling</a></span>
+                    </div>              
+                  </div>
+                </div>
+              </div>
+              <div class="px-3 gray pt-2">Girls</div>
+              <div class="schedule mt-1">
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Basketball</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Softball</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Soccer</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Tennis</a></span>
+                    </div>              
+                  </div>
+                </div>
+                <div class="box pb-4">
+                  <div class="row row-4 align-items-center">
+                    <div class="col">
+                      <span class="title ml-3"><a href="#!" class="black">Volleyball</a></span>
+                    </div>              
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <img src="img/adv-2.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 col-xl w-1 mb-4 order-1 order-lg-2 mb-xl-0">
+          <div class="section-white mb-4">
+            <div class="pt-3 px-3 mb-2 mb-sm-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <span class="fz-18 font-weight-bold align-middle">2023 Football Schedule</span>
+                </div>
+                <div class="col-auto text-right text-sm-center">
+                  <select class="custom-select select-year w-auto" id="inputState">
+                    <option selected="">Glenbard West</option>
+                    <option value="1">Glenbard South</option>
+                    <option value="2">Benet Academy</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="schedule mt-1">
+              <div class="box">
+                <div class="table-responsive scroll">
+                  <table class="table table-2 table-borderless">
+                    <tbody>
+                      <tr>
+                        <td> 
+                          <div>8/26</div>
+                          <div>
+                            <span class="align-middle">vs</span>
+                            <span class="img-team-table">
+                              <img src="img/team1.webp" alt="">
+                            </span>
+                          </div>
+                          <div>
+                            <b class="align-middle green">W</b>
+                            <span class="align-middle">6-<b>7</b></span>
+                          </div>
+                        </td>
+                        <td> 
+                          <div>9/2</div>
+                          <div>
+                            <span class="align-middle">vs</span>
+                            <span class="img-team-table">
+                              <img src="img/team2.webp" alt="">
+                            </span>
+                          </div>
+                          <div>
+                            <b class="align-middle red">L</b>
+                            <span class="align-middle"><b>10</b>-0</span>
+                          </div>
+                        </td>
+                        <td> 
+                          <div>9/9</div>
+                          <div>
+                            <span class="align-middle">vs</span>
+                            <span class="img-team-table">
+                              <img src="img/team3.webp" alt="">
+                            </span>
+                          </div>
+                          <div>
+                            <b class="align-middle red">L</b>
+                            <span class="align-middle"><b>31</b>-0</span>
+                          </div>
+                        </td>
+                        <td> 
+                          <div>9/16</div>
+                          <div>
+                            <span class="align-middle">vs</span>
+                            <span class="img-team-table">
+                              <img src="img/team4.webp" alt="">
+                            </span>
+                          </div>
+                          <div>
+                            <b class="align-middle green">W</b>
+                            <span class="align-middle">10-<b>13</b></span>
+                          </div>
+                        </td>
+                        <td> 
+                          <div>9/27</div>
+                          <div>
+                            <span class="align-middle">vs</span>
+                            <span class="img-team-table">
+                              <img src="img/team5.webp" alt="">
+                            </span>
+                          </div>
+                          <div>
+                            <b class="align-middle green">W</b>
+                            <span class="align-middle">55-<b>56</b></span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="collapse" id="collapse1">
+                <div class="box">
+                  <div class="table-responsive scroll">
+                    <table class="table table-2 table-borderless">
+                      <tbody>
+                        <tr>
+                          <td> 
+                            <div>8/26</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team6.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">6-<b>7</b></span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/2</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/gs.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle red">L</b>
+                              <span class="align-middle"><b>10</b>-0</span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/9</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team1.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle red">L</b>
+                              <span class="align-middle"><b>31</b>-0</span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/16</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team2.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">10-<b>13</b></span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/27</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team3.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">55-<b>56</b></span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="table-responsive scroll">
+                    <table class="table table-2 table-borderless">
+                      <tbody>
+                        <tr>
+                          <td> 
+                            <div>8/26</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team6.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">6-<b>7</b></span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/2</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/gs.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle red">L</b>
+                              <span class="align-middle"><b>10</b>-0</span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/9</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team1.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle red">L</b>
+                              <span class="align-middle"><b>31</b>-0</span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/16</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team2.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">10-<b>13</b></span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/27</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team3.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">55-<b>56</b></span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="table-responsive scroll">
+                    <table class="table table-2 table-borderless">
+                      <tbody>
+                        <tr>
+                          <td> 
+                            <div>8/26</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team6.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">6-<b>7</b></span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/2</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/gs.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle red">L</b>
+                              <span class="align-middle"><b>10</b>-0</span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/9</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team1.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle red">L</b>
+                              <span class="align-middle"><b>31</b>-0</span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/16</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team2.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">10-<b>13</b></span>
+                            </div>
+                          </td>
+                          <td> 
+                            <div>9/27</div>
+                            <div>
+                              <span class="align-middle">vs</span>
+                              <span class="img-team-table">
+                                <img src="img/team3.webp" alt="">
+                              </span>
+                            </div>
+                            <div>
+                              <b class="align-middle green">W</b>
+                              <span class="align-middle">55-<b>56</b></span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 px-3"><a class="fz-14 font-weight-bold" data-toggle="collapse" href="#collapse1" aria-expanded="false">Full Schedule</a></div>
+          </div>
+          <div class="section-white">
+            <div class="img-wrap">
+              <div class="bg-img bg-wrap embed-responsive embed-responsive-16by9" style="background-image: url(img/img1.webp)">
+              </div>
+            </div>
+            <div class="text-box py-2 mb-3">
+              <a href="#!" class="blue-link d-inline-block mb-2">Hinsdale Central High School | Volleyball</a>
+              <h4><a href="#!">Hinsdale Central senior Braden James Huff commits to Gonzaga</a></h4>
+              <div class="fz-14">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+              <div class="data">OCT 10, 2022</div>
+            </div>
+            <div class="text-box-container">
+              <div class="text-box">
+                <div class="row row-8">
+                  <div class="col-sm-4">
+                    <div class="img-wrap border-15">
+                      <div class="bg-img bg-wrap embed-responsive embed-responsive-1by1" style="background-image: url(img/img2.webp)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8 mt-2 mt-sm-0">
+                    <div>
+                      <a href="#!" class="blue-link d-inline-block mb-2">Hinsdale Central High School | Soccer</a>
+                      <h4><a href="#!">Hinsdale Central puts on a show at Pangos</a></h4>
+                      <div class="fz-14">Anim ipsam voluptatem quia voluptas sit aspernatur sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
+                      <div class="data">OCT 19, 2022</div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+              <div class="text-box">
+                <div class="row row-8">
+                  <div class="col-sm-4">
+                    <div class="img-wrap border-15">
+                      <div class="bg-img bg-wrap embed-responsive embed-responsive-1by1" style="background-image: url(img/img3.webp)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8 mt-2 mt-sm-0">
+                    <div>
+                      <a href="#!" class="blue-link d-inline-block mb-2">Hinsdale Central High School | Basketball</a>
+                      <h4><a href="#!">The winningest high school basketball programs of the decade: No. 30 Hinsdale Central</a></h4>
+                      <div class="fz-14">Nemo enim ipsam voluptatem quia voluptas sit aspernatur sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
+                      <div class="data">OCT 3, 2022</div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-6 col-xl-auto order-3">
+          <div class="w-300">
+            <div class="text-center">
+              <img src="img/adv.webp" alt="">
+            </div>
+            <div class="content-box-geo pt-2 my-4">
+              <h3 class="title">Future Container</h3>
+              <div class="news-box">
+                <div><a href="#!" class="black">Eight of the area’s elite teams will participate in season-ending high school basketball tournament</a></div>
+                <a href="#!" class="a-blue">BASKETBALL</a>
+              </div>
+              <div class="news-box">
+                <div><a href="#!" class="black">In-state Illini targets rise in updated 247 rankings for 2023 class</a></div>
+                <a href="#!" class="a-blue">BASKETBALL</a>
+              </div>
+              <div class="news-box">
+                <div><a href="#!" class="black">Simeon outlasts New Trier in high profile season opener for two of the state's top ranked teams</a></div>
+                <a href="#!" class="a-blue">BASKETBALL</a>
+              </div>
+              <div class="news-box">
+                <div><a href="#!" class="black">Glenbard West senior Braden Huff commits to Gonzaga</a></div>
+                <a href="#!" class="a-blue">BASKETBALL</a>
+              </div>
+              <div class="news-box">
+                <div><a href="#!" class="black">The winningest high school basketball programs of the decade: No. 30 New Trier</a></div>
+                <a href="#!" class="a-blue">BASKETBALL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="text-center pb-3">
+        <a href="#1">
+          <img src="img/brand-geo.webp" alt="" width="250">
+        </a>
+      </div>
+      <div class="social-box mb-3">
+        <div class="row row-8 align-items-center justify-content-center">
+          <div class="col-auto">
+            <a href="#!" class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 448 512"><path fill="#FFF" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="#!" class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 448 512"><path fill="#FFF" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="#!" class="social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 448 512"><path fill="#FFF" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-8 justify-content-center links-box mb-3">
+        <div class="col-auto">
+          <a href="#!">About</a>
+        </div>
+        <div class="col-auto">
+          <span>•</span>
+        </div>
+        <div class="col-auto">
+          <a href="#!">Contact</a>
+        </div>
+        <div class="col-auto">
+          <span>•</span>
+        </div>
+        <div class="col-auto">
+          <a href="#!">Privacy Policy</a>
+        </div>
+        <div class="col-auto">
+          <span>•</span>
+        </div>
+        <div class="col-auto">
+          <a href="#!">Terms of Service</a>
+        </div>
+      </div>
+      <div class="text-center fz-12">©2023 Glen Ellyn Sports Wire. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
+
