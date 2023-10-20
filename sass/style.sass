@@ -27,6 +27,7 @@ $color-green: #83d74b
 $color-border: #dfdfe6
 $color-red: #f42633
 $color-green-2: #1eb100
+$border-item: #d5d5d5
 
 .red
 	color: $color-red
@@ -223,9 +224,9 @@ a
 				display: inline-block
 		.navbar-nav
 			.nav-item
-				border-bottom: 1px solid #d5d5d5
+				border-bottom: 1px solid $border-item
 				&:first-child
-					border-top: 1px solid #d5d5d5
+					border-top: 1px solid $border-item
 				.nav-link
 					color: $color-blue !important
 					display: flex
@@ -323,9 +324,8 @@ a
 
 .nav-white
 	background: $color-white !important
-	padding: 4px 0
-	overflow-x: auto
 	border-top: 1px solid #dbdbdb
+	position: relative
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
 	@media (max-width: 1199.98px)
 		position: sticky
@@ -365,6 +365,31 @@ a
 		.col-team
 			display: block
 			border-right: 1px solid $color-border
+
+.nav-white-scroll
+	overflow-x: auto
+	padding: 4px 0
+	[class*='col']
+		position: initial
+		.dropdown
+			position: initial
+			.dropdown-toggle
+				&:after
+					display: none !important
+			.dropdown-menu
+				top: 45px !important
+				margin-top: 0
+				border-radius: 8px
+				font-size: 14px
+				.dropdown-item
+					padding: 4px 24px
+					color: $color-black
+					font-weight: bold
+					&:hover, &:active, &:focus
+						background-color: transparent
+						opacity: .7
+				.title
+					padding: 4px 24px
 
 .breadcrumb
 	background: transparent
@@ -545,12 +570,10 @@ a
 	font-size: 14px
 	cursor: pointer
 	tbody
-		tr:not(:last-child)
-			border-bottom: 1px solid black
 		th, td
 			text-align: center
 			white-space: nowrap
-			padding: 8px 22px
+			padding: 8px 20px
 
 .scroll
 	&::-webkit-scrollbar
