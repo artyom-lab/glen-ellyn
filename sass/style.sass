@@ -136,50 +136,6 @@ a
 	font-size: 14px
 	font-weight: bold
 
-.section-white
-	background: $color-white
-	border-radius: 8px
-	&.section-white-adaptive
-		@media (max-width: 575.98px)
-			background: transparent
-
-.text-box
-	padding: 24px 20px
-	@media (max-width: 575.98px)
-		background: $color-white
-		border-bottom-left-radius: 8px
-		border-bottom-right-radius: 8px
-		padding: 0 20px 16px !important
-		margin-bottom: 20px
-	.img-wrap
-		@media (max-width: 575.98px)
-			border-radius: 0 !important
-			margin-left: -35px !important
-			margin-right: -35px !important
-			.bg-img
-				max-height: 195px
-	&:first-child
-		padding-top: 0
-		.img-wrap
-			border-top-left-radius: 8px
-			border-top-right-radius: 8px
-			margin-left: -20px
-			margin-right: -20px
-	&:not(:first-child)
-		.img-wrap
-			border-radius: 8px
-		@media (min-width: 576px)
-			border-top: 1px solid $color-border
-
-.blue-link
-	color: $color-blue-2
-	font-size: 13px
-	font-weight: bold
-.data
-	text-transform: uppercase
-	font-size: 12px
-	margin-top: 8px
-
 .bg-img
 	background-size: cover
 	background-position: center center
@@ -221,8 +177,6 @@ a
 			width: 260px
 			@media (max-width: 767.98px)
 				width: 200px
-			@media (max-width: 575.98px)
-				width: 170px
 		.brand-white
 			display: none
 	.navbar-nav
@@ -366,14 +320,13 @@ a
 	border-top: 1px solid #dbdbdb
 	position: relative
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15)
+	position: sticky
+	z-index: 1019
+	top: 76px
 	@media (max-width: 1199.98px)
-		position: sticky
 		top: 65px
-		z-index: 1019
 	@media (max-width: 767.98px)
 		top: 55px
-	@media (max-width: 575.98px)
-		top: 50px
 	.nav-link
 		position: relative
 		color: $color-black !important
@@ -446,6 +399,50 @@ a
 				opacity: .6
 		&.active 
 			color: $color-gray-2
+
+.section-white
+	background: $color-white
+	border-radius: 8px
+	&.section-white-adaptive
+		@media (max-width: 575.98px)
+			background: transparent
+
+.text-box
+	padding: 24px 20px
+	@media (max-width: 575.98px)
+		background: $color-white
+		border-bottom-left-radius: 8px
+		border-bottom-right-radius: 8px
+		padding: 0 20px 16px !important
+		margin-bottom: 20px
+	.img-wrap
+		@media (max-width: 575.98px)
+			border-radius: 0 !important
+			margin-left: -35px !important
+			margin-right: -35px !important
+			.bg-img
+				max-height: 195px
+	&:first-child
+		padding-top: 0
+		.img-wrap
+			border-top-left-radius: 8px
+			border-top-right-radius: 8px
+			margin-left: -20px
+			margin-right: -20px
+	&:not(:first-child)
+		.img-wrap
+			border-radius: 8px
+		@media (min-width: 576px)
+			border-top: 1px solid $color-border
+
+.blue-link
+	color: $color-blue-2
+	font-size: 13px
+	font-weight: bold
+.data
+	text-transform: uppercase
+	font-size: 12px
+	margin-top: 8px
 
 .content-box-geo
 	border-radius: 8px 
