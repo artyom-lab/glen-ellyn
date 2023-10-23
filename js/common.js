@@ -9,7 +9,7 @@ $("#sandwich").on("click", function() {
 });
 
   function navbar() {
-    if ($(this).scrollTop() >= $(window).height()/5) {
+    if ($(this).scrollTop() >= 200) {
       $('.nav-white').addClass("sticky");
     } else {
       $('.nav-white').removeClass("sticky");
@@ -37,5 +37,4 @@ $("#sandwich").on("click", function() {
   });
 
 });
-
 
