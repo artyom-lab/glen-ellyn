@@ -126,8 +126,49 @@ a {
 
 .section-white {
   background: #FFF;
-  border-radius: 15px;
-  overflow: hidden; }
+  border-radius: 8px; }
+  @media (max-width: 575.98px) {
+    .section-white.section-white-adaptive {
+      background: transparent; } }
+
+.text-box {
+  padding: 24px 20px; }
+  @media (max-width: 575.98px) {
+    .text-box {
+      background: #FFF;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 0 20px 16px !important;
+      margin-bottom: 20px; } }
+  @media (max-width: 575.98px) {
+    .text-box .img-wrap {
+      border-radius: 0 !important;
+      margin-left: -35px !important;
+      margin-right: -35px !important; }
+      .text-box .img-wrap .bg-img {
+        max-height: 195px; } }
+  .text-box:first-child {
+    padding-top: 0; }
+    .text-box:first-child .img-wrap {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin-left: -20px;
+      margin-right: -20px; }
+  .text-box:not(:first-child) .img-wrap {
+    border-radius: 8px; }
+  @media (min-width: 576px) {
+    .text-box:not(:first-child) {
+      border-top: 1px solid #dfdfe6; } }
+
+.blue-link {
+  color: #007bff;
+  font-size: 13px;
+  font-weight: bold; }
+
+.data {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 8px; }
 
 .bg-img {
   background-size: cover;
@@ -389,7 +430,7 @@ a {
     color: #c0c0c0; }
 
 .content-box-geo {
-  border-radius: 15px;
+  border-radius: 8px;
   background: #FFF; }
   .content-box-geo .title {
     padding: 8px 16px 16px;
@@ -515,29 +556,10 @@ a {
 .schedule .box {
   padding: 8px 16px;
   border-bottom: 1px solid #dfdfe6; }
+  .schedule .box:last-child {
+    border-bottom: 0; }
   .schedule .box .title {
     font-size: 12px; }
-
-.text-box {
-  padding: 24px 20px; }
-
-.blue-link {
-  color: #007bff;
-  font-size: 13px;
-  font-weight: bold; }
-
-.data {
-  text-transform: uppercase;
-  font-size: 12px;
-  margin-top: 8px; }
-
-.text-box-container .text-box {
-  border-top: 1px solid #dfdfe6; }
-  .text-box-container .text-box .img-wrap {
-    border-radius: 15px; }
-    @media (max-width: 575.98px) {
-      .text-box-container .text-box .img-wrap .bg-img {
-        max-height: 195px; } }
 
 .select-year {
   font-size: 13px;
