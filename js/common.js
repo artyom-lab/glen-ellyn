@@ -9,7 +9,7 @@ $("#sandwich").on("click", function() {
 });
 
   function navbar() {
-    if ($(this).scrollTop() >= $(window).height()/2) {
+    if ($(this).scrollTop() >= $(window).height()/5) {
       $('.nav-white').addClass("sticky");
     } else {
       $('.nav-white').removeClass("sticky");

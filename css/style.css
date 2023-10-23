@@ -333,10 +333,29 @@ a {
     .nav-white .nav-link img {
       width: 30px; }
   .nav-white .col-team {
-    display: none; }
+    width: 0;
+    padding: 0;
+    transition: 0.3s;
+    opacity: 0;
+    border-right: 1px solid;
+    border-color: transparent; }
+    .nav-white .col-team .nav-link {
+      width: 0;
+      padding: 0;
+      transition: 0.3s; }
+      .nav-white .col-team .nav-link img {
+        width: 0;
+        transition: 0.3s; }
   .nav-white.sticky .col-team {
-    display: block;
-    border-right: 1px solid #dfdfe6; }
+    width: auto;
+    padding: 0 8px;
+    opacity: 1;
+    border-color: #dfdfe6; }
+    .nav-white.sticky .col-team .nav-link {
+      width: 42px;
+      padding: 6px; }
+      .nav-white.sticky .col-team .nav-link img {
+        width: 30px; }
 
 .nav-white-scroll {
   overflow-x: auto;
