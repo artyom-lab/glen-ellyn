@@ -412,7 +412,7 @@ a {
       background: #FFF;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
-      padding: 0 20px 16px !important;
+      padding: 0 20px 16px;
       margin-bottom: 20px; } }
   @media (max-width: 575.98px) {
     .text-box .img-wrap {
@@ -575,6 +575,20 @@ a {
     border-bottom: 0; }
   .schedule .box .title {
     font-size: 12px; }
+  .schedule .box .time {
+    font-size: 13px;
+    color: #c0c0c0; }
+  .schedule .box .team img {
+    width: 26px; }
+
+.schedule-2 .box .title {
+  font-size: 14px !important;
+  margin-left: 4px; }
+  @media (max-width: 575.98px) {
+    .schedule-2 .box .title {
+      display: none; } }
+.schedule-2 .box .team img {
+  width: 30px; }
 
 .select-year {
   font-size: 13px;
@@ -603,6 +617,26 @@ a {
   background-color: #c0c0c0;
   border-radius: 2px; }
 
+.score {
+  display: block;
+  background: #f0f2f5;
+  border-radius: 15px;
+  border: 2px solid #dde1e5;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  padding: 5.5px; }
+  @media (max-width: 575.98px) {
+    .score {
+      font-size: 18px; } }
+
+.h-60 {
+  height: 60px;
+  display: flex; }
+  .h-60 img {
+    margin: auto;
+    max-height: 60px; }
+
 .card-widget {
   min-height: 175px;
   width: 300px;
@@ -615,10 +649,6 @@ a {
   font-size: 13px;
   z-index: 0;
   display: flex; }
-  @media (max-width: 575.98px) {
-    .card-widget {
-      max-width: 300px;
-      width: auto; } }
   .card-widget .title {
     font-size: 17px;
     line-height: 1.2;
