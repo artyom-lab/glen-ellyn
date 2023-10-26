@@ -6,6 +6,7 @@ $(function() {
 
 $("#sandwich").on("click", function() { 
   $(".navbar").toggleClass("navbar-white");
+  $("body").toggleClass("menubar");
 });
 
   function navbar() {

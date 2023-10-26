@@ -55,8 +55,10 @@ body
 	position: relative
 	flex-direction: column
 	min-height: 100vh
+	&.menubar
+		overflow: hidden
 
-a 
+a 	
 	text-decoration: none !important
 	transition: $transition
 	&:hover
@@ -208,6 +210,13 @@ a
 	&.navbar-white
 		background: $color-white !important
 		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+		@media (max-width: 1199.98px)
+			position: fixed
+			left: 0
+			right: 0
+			bottom: 0 
+			overflow: auto
+			align-items: start
 		.sandwich
 			span, &:before, &:after
 				border-color: $color-blue		
@@ -265,6 +274,37 @@ a
 				padding: 4px 24px
 				display: inline-block
 				white-space: initial	
+
+.dropdown-state
+	.dropdown-menu
+		min-width: 400px
+		padding: 8px
+		@media (max-width: 1199.98px)
+			max-width: 50%
+			min-width: auto
+			width: 100%
+		@media (max-width: 767.98px)
+			max-width: 100%
+		.dropdown-item
+			padding: 8px 16px
+			display: inline-block
+			position: relative
+			width: auto
+			font-size: 16px
+			color: $color-blue
+			&:before 
+				content: ""
+				position: absolute
+				bottom: 2px
+				left: 16px
+				width: 0
+				border-bottom: 4px solid $color-green
+				transition: $transition
+			&:hover, &.active
+				opacity: 1
+				font-weight: bold
+				&:before
+					width: calc(100% - 32px)
 
 .sandwich
 	display: inline-block
