@@ -274,8 +274,13 @@ a
 				padding: 4px 24px
 				display: inline-block
 				white-space: initial	
+	&.drop-hidden
+		@media (min-width: 1200px)
+			display: none
 
 .dropdown-state
+	@media (max-width: 1199.98px)
+		display: none
 	.dropdown-menu
 		min-width: 400px
 		padding: 8px
