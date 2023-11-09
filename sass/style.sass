@@ -60,7 +60,7 @@ body
 
 a 	
 	text-decoration: none !important
-	transition: $transition
+	transition: $transition !important
 	&:hover
 		opacity: .7
 	&.black
@@ -75,7 +75,8 @@ a
 		max-width: 1270px
 
 .w-1
-	width: 1px
+	@media (min-width: 1200px)
+		width: 1px
 
 .w-300
 	@media (min-width: 1200px)
@@ -172,6 +173,8 @@ a
 	transition: $transition
 	background: $color-blue !important
 	padding: 10px 16px
+	@media (max-width: 1199.98px)
+		padding: 10px 0
 	.navbar-brand
 		@media (max-width: 1199.98px)
 			padding: 0
@@ -283,13 +286,8 @@ a
 		display: none
 	.dropdown-menu
 		min-width: 400px
+		right: 0 !important
 		padding: 8px
-		@media (max-width: 1199.98px)
-			max-width: 50%
-			min-width: auto
-			width: 100%
-		@media (max-width: 767.98px)
-			max-width: 100%
 		.dropdown-item
 			padding: 8px 16px
 			display: inline-block
@@ -340,12 +338,12 @@ a
 		margin-left: auto
 	&:not(.collapsed)
 		&:before
-			transform: translateX(3px) translateY(-1px) rotate(-45deg)
+			transform: translateY(-1px) rotate(-45deg)
 		span
 			width: 0
 			opacity: 0
 		&:after
-			transform: translateX(3px) translateY(1px) rotate(45deg)
+			transform: translateY(1px) rotate(45deg)
 	&:hover 
 		opacity: .8
 
@@ -402,8 +400,7 @@ a
 		padding: 0
 		transition: $transition
 		opacity: 0
-		border-right: 1px solid 
-		border-color: transparent
+		border-right: 0px solid transparent
 		.nav-link
 			width: 0
 			padding: 0
@@ -416,7 +413,7 @@ a
 			width: auto
 			padding: 0 8px
 			opacity: 1
-			border-color: $color-border
+			border-right: 1px solid $color-border
 			.nav-link
 				width: 42px
 				padding: 6px
@@ -434,7 +431,7 @@ a
 				&:after
 					display: none !important
 			.dropdown-menu
-				top: 45px !important
+				top: 2px !important
 				margin-top: 0
 				border-radius: 8px
 				font-size: 14px
@@ -451,6 +448,7 @@ a
 .breadcrumb
 	background: transparent
 	font-size: 11px
+	padding: 12px 0
 	.breadcrumb-item
 		+ .breadcrumb-item
 			padding-left: 6px
@@ -483,8 +481,8 @@ a
 	.img-wrap
 		@media (max-width: 575.98px)
 			border-radius: 0 !important
-			margin-left: -35px !important
-			margin-right: -35px !important
+			margin-left: -32px !important
+			margin-right: -32px !important
 			.bg-img
 				max-height: 195px
 	&:first-child
@@ -661,6 +659,7 @@ a
 	font-size: 13px
 	border: 0	
 	cursor: pointer
+	padding: 6px 28px 6px 12px
 	background: $color-gray url(../img/arrows.webp) no-repeat right 0.75rem center/8px 10px
 	&:focus 
 		box-shadow: none

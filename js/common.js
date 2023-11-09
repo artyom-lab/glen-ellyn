@@ -1,9 +1,5 @@
 $(function() {
 
-    $(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) { 
-    e.stopPropagation();
-  });
-
 $("#sandwich").on("click", function() { 
   $(".navbar").toggleClass("navbar-white");
   $("body").toggleClass("menubar");
